@@ -11,9 +11,9 @@ public class DictionaryIntersectionTests
     public void Test_Intersect_TwoEmptyDictionaries_ReturnsEmptyDictionary()
     {
         //Arrange
-        Dictionary<string, int> dict1 = new Dictionary<string, int>(); //празен речник
-        Dictionary<string, int> dict2 = new Dictionary<string, int>(); //празен речник
-        Dictionary<string, int> expectedDictionary = new Dictionary<string, int>(); //празен речник
+        Dictionary<string, int> dict1 = new Dictionary<string, int>();
+        Dictionary<string, int> dict2 = new Dictionary<string, int>(); 
+        Dictionary<string, int> expectedDictionary = new Dictionary<string, int>(); 
 
         //Act
         Dictionary<string, int> result = DictionaryIntersection.Intersect(dict1, dict2);
@@ -26,14 +26,14 @@ public class DictionaryIntersectionTests
     public void Test_Intersect_OneEmptyDictionaryAndOneNonEmptyDictionary_ReturnsEmptyDictionary()
     {
         //Arrange
-        Dictionary<string, int> dict1 = new Dictionary<string, int>(); //празен речник
+        Dictionary<string, int> dict1 = new Dictionary<string, int>();
         Dictionary<string, int> dict2 = new Dictionary<string, int>
         {
             { "Desi", 6},
             { "Ivan", 8}
         };
 
-        Dictionary<string, int> expectedDictionary = new Dictionary<string, int>(); //празен речник
+        Dictionary<string, int> expectedDictionary = new Dictionary<string, int>(); /
 
         //Act
         Dictionary<string, int> result = DictionaryIntersection.Intersect(dict1, dict2);
@@ -57,7 +57,7 @@ public class DictionaryIntersectionTests
             { "Ivan", 8}
         };
 
-        Dictionary<string, int> expectedDictionary = new Dictionary<string, int>(); //празен речник
+        Dictionary<string, int> expectedDictionary = new Dictionary<string, int>(); /
 
         //Act
         Dictionary<string, int> result = DictionaryIntersection.Intersect(dict1, dict2);
